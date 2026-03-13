@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Profile</title>
+</head>
+<body>
+
+<form name="editProfile" method="POST" action="">
+    
+    <table border="1" cellpadding="10" cellspacing="4" width="500">
+        <tr>
+            <td colspan="2" align="center" bgcolor="#cccccc">
+                <h2>Edit profile</h2>
+            </td>
+        </tr>
+        
+        <tr>
+            <td align="center" valign="top" width="150">
+                <img src="foto_profil.jpg" alt="Profile Picture" width="120" height="150"><br><br>
+                <input type="button" value="Upload">
+            </td>
+            
+            <td valign="top">
+                <table cellpadding="5">
+                    <tr>
+                        <td>Name</td>
+                        <td>Tim Berners-Lee</td>
+                    </tr>
+                    <tr>
+                        <td>Position</td>
+                        <td>
+                            <select name="position">
+                                <optgroup label="Programmer">
+                                    <option value="senior_prog" selected>Senior Programmer</option>
+                                    <option value="junior_prog">Junior Programmer</option>
+                                </optgroup>
+                                <optgroup label="System Analyst">
+                                    <option value="senior_ana">Senior Analyst</option>
+                                    <option value="junior_ana">Junior Analyst</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="text" name="password" value="admin"></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm Password</td>
+                        <td><input type="password" name="confirm_password" value="admin"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="right">
+                            <input type="reset" value="Reset">
+                            <input type="submit" value="Update">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+</body>
+</html>
